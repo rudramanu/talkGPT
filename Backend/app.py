@@ -1,7 +1,7 @@
 
 from flask import Flask, jsonify
 
-from backend.routes.users import users_bp
+from routes.users import users_bp
 
 app = Flask(__name__)
 app.register_blueprint(users_bp, url_prefix="/users")
