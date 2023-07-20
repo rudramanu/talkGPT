@@ -11,4 +11,12 @@ export class LoginsignupComponent {
   navigateToLogin() {
     this.router.navigate(['/login']);
   }
+  isChatVisible: boolean = true;
+
+  // ngOnInit() {
+  //   const token = localStorage.getItem('authToken');
+  //   if (token == undefined) {
+  //     this.isChatVisible = false;
+  //   }
+  // }
 }
