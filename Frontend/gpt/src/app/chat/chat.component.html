@@ -1,1 +1,30 @@
-<p>chat works!</p>
+<div *ngIf="isChatVisible" class="chat-container">
+  <div class="chat-box">
+    <div class="message received">
+      <p>Hello! How can I help you?</p>
+    </div>
+    <div class="message sent">
+      <p>Hi! I have a question.</p>
+    </div>
+    <div class="message received">
+      <p>Please ask.</p>
+    </div>
+    <div class="message sent">
+      <p>Who is the Prime Minister of India ?</p>
+    </div>
+    <div class="message received">
+      <p>Narendra Modi is the current Prime Minister of India</p>
+    </div>
+    <div class="message sent">
+      <p>Thanks</p>
+    </div>
+    <div class="message received">
+      <p>Thank you, Please visit again.</p>
+    </div>
+    <!-- Add more messages here -->
+  </div>
+  <div class="input-box">
+    <input type="text" placeholder="Type your message..." />
+    <button>Send</button>
+  </div>
+</div>
