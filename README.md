@@ -6,7 +6,7 @@ TalkGPT is an artificial intelligence chatbot that leverages the power of ChatGP
 
 ## Deplolyed App
 
-- `Frontend link` :
+- `Frontend link` : https://lovely-empanada-9d490b.netlify.app/navbar
 - `Backend link` : https://talkgpt-jddq.onrender.com
 
 ## Video Walkthrough of the project
