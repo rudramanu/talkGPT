@@ -1,3 +1,10 @@
+<nav class="navbar">
+  <div class="logo-section">
+    <img routerLink="/navbar" id="img1" src="assets/tgp.jpg" alt="Logo" />
+    <p routerLink="/navbar">TalkGPT</p>
+  </div>
+</nav>
+
 <div class="hero">
   <div class="form-box">
     <div class="social-icons">
@@ -18,19 +25,28 @@
         alt=""
       />
     </div>
-    <form id="login" class="input-group">
-      <input type="text" class="input-field" placeholder="Email" required />
+    <form id="login" class="input-group" (ngSubmit)="onSubmit()">
+      <input
+        type="text"
+        class="input-field"
+        placeholder="Email"
+        required
+        [(ngModel)]="email"
+        name="email"
+      />
       <div id="pass">
         <input
-          id="password"
           type="password"
           class="input-fieldd"
           placeholder="Enter Password"
           required
+          [(ngModel)]="password"
+          name="password"
         />
       </div>
       <input type="checkbox" class="check-box" /><span>Remember Password</span>
       <button type="submit" class="submit-btn">Login</button>
+      <!-- <input type="submit" value="Register" /> -->
     </form>
   </div>
 </div>

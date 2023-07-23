@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LoginsignupComponent } from './loginsignup/loginsignup.component';
 import { ChatComponent } from './chat/chat.component';
 
-const appRoutes: Routes = [
-  { path: '', component: LoginsignupComponent },
+const routes: Routes = [
+  { path: 'navbar', component: NavbarComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'chat', component: ChatComponent },
+  { path: '', redirectTo: '/navbar', pathMatch: 'full' },
 ];
 
 @NgModule({
@@ -19,10 +24,16 @@ const appRoutes: Routes = [
     LoginComponent,
     SignupComponent,
     NavbarComponent,
-    LoginsignupComponent,
     ChatComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
+  imports: [
+    BrowserModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule.forRoot(routes),
+  ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent],
 })

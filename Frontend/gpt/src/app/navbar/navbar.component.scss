@@ -9,14 +9,16 @@ body {
   background-color: #ffffff;
   padding: 10px 20px;
   margin-bottom: 120px;
-  border: 2px solid orange;
+  border: 3px solid orange;
   border-radius: 7px;
 }
-img {
+#img1 {
   width: 80px;
+  // cursor: pointer;
+  cursor: not-allowed;
 }
 
-button {
+#btn {
   background-color: orangered;
   color: #fff;
   font-weight: bold;
@@ -26,6 +28,7 @@ button {
   cursor: pointer;
 }
 p {
+  cursor: not-allowed;
   color: rgb(0, 42, 195);
   font-size: 25px;
   font-weight: bold;
@@ -34,18 +37,54 @@ p {
 }
 .logo-section {
   align-items: center;
-  width: 65%;
+  width: 68%;
   display: flex;
-  // border: 1px solid red;
 }
 .welcome-section {
-  width: 35%;
-  // border: 1px solid red;
+  width: 32%;
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
-button:hover {
+#btn:hover {
   background-color: #0056b3;
   transition: 0.3s;
+}
+// =================================
+#main {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 15px;
+}
+#img {
+  margin-bottom: 50px;
+}
+
+#img2 {
+  width: 200px;
+}
+#button {
+  display: flex;
+  justify-content: space-around;
+}
+#button button {
+  padding: 10px 40px;
+  font-size: 20px;
+  color: white;
+  background-color: orangered;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+#button button:hover {
+  background-color: blue;
+  transition: 0.3s;
+}
+#user {
+  font-size: large;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

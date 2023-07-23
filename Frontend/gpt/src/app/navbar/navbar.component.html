@@ -1,14 +1,21 @@
-<body>
+<body routerLink="/navbar">
   <nav class="navbar">
     <div class="logo-section">
-      <!-- Your logo goes here -->
-      <img src="assets/tgp.jpg" alt="Logo" />
+      <img id="img1" src="assets/tgp.jpg" alt="Logo" />
       <p>TalkGPT</p>
     </div>
-    <div class="welcome-section">
-      <!-- Display the welcome message -->
-      <span id="user">Welcome, User!</span>
-      <button (click)="logout()">Logout</button>
+    <div *ngIf="isChatVisible1" class="welcome-section">
+      <span id="user">Welcome, {{ userName }}!</span>
+      <button routerLink="/navbar" id="btn" (click)="logout()">Logout</button>
     </div>
   </nav>
+  <div *ngIf="isChatVisible" id="main">
+    <div id="img">
+      <img id="img2" src="assets/tgp.jpg" alt="" />
+    </div>
+    <div id="button">
+      <button routerLink="/login">Login</button>
+      <button routerLink="/signup">Signup</button>
+    </div>
+  </div>
 </body>
