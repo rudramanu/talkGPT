@@ -16,9 +16,9 @@ TalkGPT is an artificial intelligence chatbot that leverages the power of ChatGP
 - `Home Page`: Navigation bar, a section which containg logo of the Application and LOGIN & SIGNUP button.
 - `Sign-Up`: User details are stored in MongoDB Atlas, shows a pop-up if Email has already been used.
 - `Log-In`: User authentication to check whether the user's Email and Password match with details existing in the database or not.
-  `User's Profile`: Only if the user has been successfully Login, then their name will be shown on the Navigation bar.
-  `Chat-Page`: Only after user successfully logged in, then user will be redirected to Chat page and on the Navigation bar a Logout button will be there.
-  `Chat-History`: After verification of user, their previous chat will be there on the chat box for every individual users.
+- `User's Profile`: Only if the user has been successfully Login, then their name will be shown on the Navigation bar.
+- `Chat-Page`: Only after user successfully logged in, then user will be redirected to Chat page and on the Navigation bar a Logout button will be there.
+- `Chat-History`: After verification of user, their previous chat will be there on the chat box for every individual users.
 
 ## Installation & Getting started
 
