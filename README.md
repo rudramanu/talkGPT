@@ -37,9 +37,9 @@ Detailed instructions on how to install, configure, and get the project running:
 
 ## API Endpoints
 
-POST /api/register - To register the user.
-POST /api/login - To login the user.
-GET /api/getchat - To fetch all the previous chat.
+- POST /api/register - To register the user.
+- POST /api/login - To login the user.
+- GET /api/getchat - To fetch all the previous chat.
 
 ## Technology Stack
 
@@ -51,12 +51,19 @@ GET /api/getchat - To fetch all the previous chat.
 ## A little glimpse of the pages 🖼️
 
 - Homepage
+
   ![Alt text](Homepage.png)
+
 - Registration Page
+
   ![Alt text](Register_page.png)
+
 - Login Page
+
   ![Alt text](Login_page.png)
+
 - Chat Page
+
   ![Alt text](Chat_page.png)
 
 Thanks you for Checking my Project🙏🏻😇
