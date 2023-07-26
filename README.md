@@ -66,4 +66,4 @@ Detailed instructions on how to install, configure, and get the project running:
 
   ![Alt text](Chat_page.png)
 
-Thanks you for Checking my Project🙏🏻😇
+Thank you for Checking my Project🙏🏻😇
